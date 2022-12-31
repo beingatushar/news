@@ -1,0 +1,58 @@
+.banner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    * {
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+
+    img {
+        width: 25%;
+        aspect-ratio: 1;
+    }
+
+    .banner-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 8rem;
+        line-height: 9rem;
+        text-transform: capitalize;
+
+
+    }
+
+    h2 {
+        font-weight: 650;
+        font-size: 3.5rem;
+        line-height: 4rem;
+        padding: 2rem 0;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 1.7rem;
+        line-height: 3rem;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+}
+
+.banner-head {
+    padding-right: 5rem;
+}
