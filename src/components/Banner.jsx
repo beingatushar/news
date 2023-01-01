@@ -18,10 +18,7 @@ function Banner() {
                     WHAT IS NEWS LETTER?
                 </h3>
                 <p>
-                    An newsletter is a periodical email sent by a person or business containing news, updates, curated content from the topic that you signed up for.
-                </p>
-                <p>
-                    Unlike an automated abandon cart email, upsell email that almost hypnotizes you to ‘buy', ‘join’, or ‘enroll’, a newsletter focuses on delivering free, valuable content.
+                    An newsletter is a periodical email sent by a person or business containing news, updates, curated content from the topic that you signed up for. Unlike an automated abandon cart email, upsell email that almost hypnotizes you to ‘buy', ‘join’, or ‘enroll’, a newsletter focuses on delivering free, valuable content.
                 </p>
             </div>
 
