@@ -9,7 +9,7 @@ export default class News extends Component {
             let url = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=c783f7c60828451b8a3909c74cc36447';
             let data = await fetch(url);
             let parsedData = await data.json();
-            console.log(parsedData);
+            // console.log(parsedData);
             this.setState(this.articles = parsedData.articles);
         }
         catch (e) {
@@ -32,7 +32,7 @@ export default class News extends Component {
                     {
                         this.articles.map(article => {
                             return (article.title && article.urlToImage && article.author && article.description && article.url) ?
-                                <NewsCard {...article} /> : ""
+                                <NewsCard {...article} key={article.url} /> : ""
                         })
                     }
                 </div>
