@@ -1,7 +1,7 @@
 import "../styles/news.scss"
 import NewsCard from "./NewsCard"
 import React, { Component } from 'react'
-
+import sampleData from "../data/sampleData.json"
 export default class News extends Component {
     articles = [];
     async componentDidMount() {
@@ -9,8 +9,12 @@ export default class News extends Component {
             let url = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=c783f7c60828451b8a3909c74cc36447';
             let data = await fetch(url);
             let parsedData = await data.json();
-            // console.log(parsedData);
-            this.setState(this.articles = parsedData.articles);
+            console.log(parsedData);
+            if (parsedData.articles)
+                this.setState(this.articles = parsedData.articles);
+            else {
+                this.setState(this.articles = sampleData);
+            }
         }
         catch (e) {
             console.log(e);
